@@ -1,0 +1,1 @@
+#archetype-log-fa2
