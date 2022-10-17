@@ -13,11 +13,6 @@ import { wrapper_fa2 } from './binding/wrapper_fa2';
 const owner         = get_account('alice');
 const bridge_wallet = get_account('bob');
 const user          = get_account('carl');
-const other         = get_account('bootstrap1');
-const user2 = get_account('bootstrap2');
-const user3 = get_account('bootstrap3');
-const user4 = get_account('bootstrap4');
-const user5 = get_account('bootstrap5');
 
 /* Endpoint ---------------------------------------------------------------- */
 
@@ -36,7 +31,6 @@ set_mockup_now(now)
 
 const token_id = new Nat(0)
 const amount   = new Nat(1000)
-const amount_0 = new Nat(0)
 const tag      = "my_tag"
 
 /* Scenarios --------------------------------------------------------------- */
