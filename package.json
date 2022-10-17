@@ -1,0 +1,29 @@
+{
+  "name": "archetype-fa2-wrapper-event",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "ts-mocha --timeout 0 --slow 99999999999999999 ./tests/*.ts",
+    "test:fa2": "ts-mocha --timeout 0 --slow 99999999999999999 ./tests/00-fa2_fungible.ts",
+    "test:wrapper": "ts-mocha --timeout 0 --slow 99999999999999999 ./tests/01-wrapper_fa2.ts",
+    "gen-binding": "completium-cli run binder-ts"
+  },
+  "dependencies": {
+    "@completium/archetype-ts-types": "^0.0.8",
+    "@completium/completium-cli": "^0.4.37",
+    "@completium/experiment-ts": "^0.0.92"
+  },
+  "devDependencies": {
+    "@completium/event-listener": "^0.0.4",
+    "@types/expect": "^24.3.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "latest",
+    "ts-mocha": "^10.0.0",
+    "typescript": "^4.7.4"
+  },
+  "completium": {
+    "binding_path": "./tests/binding/",
+    "build_path": "./build/",
+    "contracts_path": "./contracts/",
+    "tests_path": "./tests/"
+  }
+}
